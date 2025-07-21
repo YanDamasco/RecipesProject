@@ -6,7 +6,10 @@
 
 header {
     width: 100%;
-    padding: 50px 4%;
+    padding: 30px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 #auroraLogo {
@@ -28,4 +31,9 @@ header {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 30px;
 }
