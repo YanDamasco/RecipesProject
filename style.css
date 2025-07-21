@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
 
 * {
     margin: 0;
@@ -6,13 +8,14 @@
     box-sizing: border-box;
 }
 
-html {
+body, html {
     height: 200vh;
+    overflow-x: hidden;
 }
 
 header {
     width: 100%;
-    padding: 30px 4%;
+    padding: 20px 4%;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,7 +26,7 @@ header {
 
 header.scrolling {
     background-color: #ffffeed5;
-    padding: 5px 4%;
+    padding: 3px 2%;
 }
 
 #auroraLogo {
@@ -59,24 +62,81 @@ header ul li {
     position: relative;
     height: 100vh;
     background-image: url(images/restaurantBg.jpg);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .banner::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.349);
+    background: rgba(0, 0, 0, 0.486);
     z-index: 1;
 }
 
 .banner h1 {
-    font-size: 4rem;
+    font-size: 8rem;
     position: relative;
     z-index: 2;
+    color: white;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bannerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bannerInfo h2 {
+    z-index: 2;
+    font-family: "Fanwood Text", serif;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+}
+
+.wood {
+    background-image: url(/images/woodenFloor.jpg);
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.woodImg img{
+    height: 50vh;
+    border: 5px solid black;
+    margin-left: 4vw;
+}
+
+.woodText {
+    background-color: rgba(0, 0, 0, 0.315);
+    padding: 3vh;
+    border-radius: 15px;
+}
+
+.woodText h1 {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    color: rgb(110, 32, 32);
+}
+
+.woodText p {
+    max-width: 30vw;
+    font-family: "Fanwood Text", serif;
+    font-size: 1.5rem;
+    color: white;
 }
