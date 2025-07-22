@@ -9,7 +9,6 @@
 }
 
 body, html {
-    height: 200vh;
     overflow-x: hidden;
 }
 
@@ -116,12 +115,12 @@ header ul li {
 
 .woodImg img{
     height: 50vh;
-    border: 5px solid black;
+    border: 3px solid 	#FFD700;
     margin-left: 4vw;
 }
 
 .woodText {
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: rgba(0, 0, 0, 0.486);
     padding: 3vh;
     border-radius: 15px;
 }
@@ -131,12 +130,51 @@ header ul li {
     font-weight: 700;
     font-style: normal;
     font-size: 5rem;
-    color: rgb(110, 32, 32);
+    color: 	#FFD700;
 }
 
 .woodText p {
     max-width: 30vw;
     font-family: "Fanwood Text", serif;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: white;
+    text-indent: 1.2rem;
+    text-align: justify;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.animate__animated.animate__fadeInDown, .animate__animated.animate__fadeInUp {
+    --animate-duration: 2.5s;
+}
+
+#aboutTitle {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#aboutTitle.animate__animated {
+    --animate-duration: 1.5s;
+    opacity: 1;
+}
+
+.content {
+    position: relative;
+    height: 120vh;
+    background-image: url(images/restaurantInterior.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.644);
+    z-index: 1;
 }
