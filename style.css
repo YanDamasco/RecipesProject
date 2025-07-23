@@ -165,16 +165,70 @@ header ul li {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    z-index: 0;
 }
 
 .content::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.644);
-    z-index: 1;
+    background: rgba(44, 44, 44, 0.699);
+    z-index: 0;
+}
+
+.contentTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh; padding-bottom: 10vh;
+}
+
+.content > * {
+    position: relative;
+    z-index: 2;
+}
+
+.containerDifferences {
+    margin-left: 10vw; margin-right: 10vw; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.difference1, .difference2, .difference3 {
+    border: 3px solid white;
+    height: 80vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+} 
+
+.differenceImg {
+    height: 30vh;
+    width: 30vh;
+    overflow: hidden;
+}
+
+.differenceImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.differenceTitle {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.8rem;
+    color: 	#FFD700;
+}
+
+.differenceContent {
+    font-family: "Fanwood Text", serif;
+    font-size: 1.3rem;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
 }
