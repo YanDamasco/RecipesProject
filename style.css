@@ -158,6 +158,16 @@ header ul li {
     opacity: 1;
 }
 
+#menuHead {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#menuHead.animate__animated {
+    --animate-duration: 1.5s;
+    opacity: 1;
+}
+
 .content {
     position: relative;
     height: 120vh;
@@ -293,7 +303,7 @@ header ul li {
 
 .pins {
     position: relative;
-    height: 100vh;
+    height: 120vh;
     background-image: url(images/blurRestaurant.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -308,6 +318,74 @@ header ul li {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.486);
+    background: rgba(0, 0, 0, 0.699);
     z-index: 1;
+}
+
+.pins > * {
+    position: relative;
+    z-index: 2;
+}
+
+.pinsTitle {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-size: 5rem;
+    font-style: normal;
+    color: 	#f3f3f0;
+}
+
+.pinsDescription p{
+    max-width: 70vw;
+    font-family: "Fanwood Text", serif;
+    font-size: 1.8rem;
+    color: rgb(245, 243, 238);
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.pinsList {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.pinsIcons {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #bea932;
+    border-radius: 50%;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bea932;
+}
+
+.pin1, .pin2, .pin3  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pinTitle {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    font-style: normal;
+    color: 	#f3f3f0;
+}
+
+.pinText {
+    text-align: center;
+    max-width: 20vw;
+    font-family: "Fanwood Text", serif;
+    font-size: 1.8rem;
+    color: rgb(245, 243, 238);
+    letter-spacing: 2px;
 }
