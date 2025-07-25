@@ -303,7 +303,7 @@ header ul li {
 
 .pins {
     position: relative;
-    height: 120vh;
+    height: 140vh;
     background-image: url(images/blurRestaurant.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -379,6 +379,8 @@ header ul li {
     font-size: 3rem;
     font-style: normal;
     color: 	#f3f3f0;
+    margin-bottom: 5vh;
+    color: #bea932;
 }
 
 .pinText {
@@ -388,4 +390,12 @@ header ul li {
     font-size: 1.8rem;
     color: rgb(245, 243, 238);
     letter-spacing: 2px;
+}
+
+footer {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffee;
+    height: 30vh;
 }
