@@ -399,3 +399,10 @@ footer {
     background-color: #ffffee;
     height: 30vh;
 }
+
+.footerInfos {
+    margin-left: 20vw; margin-right: 20vw;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+}
