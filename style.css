@@ -168,6 +168,16 @@ header ul li {
     opacity: 1;
 }
 
+#pinAnimate1, #pinAnimate2, #pinAnimate3 {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#pinAnimate1.animate__animated, #pinAnimate2.animate__animated, #pinAnimate3.animate__animated {
+    --animate-duration: 1.5s;
+    opacity: 1;
+}
+
 .content {
     position: relative;
     height: 120vh;
@@ -397,12 +407,61 @@ footer {
     top: 0;
     left: 0;
     background-color: #ffffee;
-    height: 30vh;
+    height: 25vh;
+    font-family: "Fanwood Text", serif;
+    font-size: 1.2rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .footerInfos {
     margin-left: 20vw; margin-right: 20vw;
     display: flex;
     align-items: top;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.contact h1, .institutional h1, .adress h1{
+    font-family: "Fanwood Text", serif;
+    font-size: 1.6rem;
+    color: rgb(17, 17, 17);
+}
+
+.contactNumber, .contactEmail {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contactNumber p, .contactEmail p{
+    padding-left: 1vw;
+}
+
+.institutionalInfos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.adress h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

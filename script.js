@@ -6,6 +6,9 @@ window.addEventListener("scroll", function () {
 
 const aboutTitle = document.getElementById("aboutTitle");
 const menuHead = document.getElementById("menuHead");
+const pinAnimate1 = document.getElementById("pinAnimate1");
+const pinAnimate2 = document.getElementById("pinAnimate2");
+const pinAnimate3 = document.getElementById("pinAnimate3");
 const observerAbout = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -16,6 +19,9 @@ const observerAbout = new IntersectionObserver((entries) => {
 
 observerAbout.observe(aboutTitle);
 observerAbout.observe(menuHead);
+observerAbout.observe(pinAnimate1);
+observerAbout.observe(pinAnimate2);
+observerAbout.observe(pinAnimate3);
 
 
 const observerDifferences = new IntersectionObserver((entries) => {
