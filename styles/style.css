@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.navBtns a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#homeBtn:hover, #menuBtn:hover, #aboutBtn:hover, #reviewsBtn:hover {
+    transition: 0.5;
+    transform: scale(2);
+}
+
+header {
+    width: 100%;
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #ffffee;
+    transition: 0.5s;
+}
+
+header.scrolling {
+    background-color: #ffffeed5;
+    padding: 3px 2%;
+}
+
+#auroraLogo {
+    height: 80px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBtns {
+    font-family: "Fanwood Text", serif;
+    font-weight: 500;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+    background-image: url(/images/restaurantBg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.486);
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 8rem;
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bannerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bannerInfo h2 {
+    z-index: 2;
+    font-family: "Fanwood Text", serif;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+}
+
+.wood {
+    background-image: url(/images/woodenFloor.jpg);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.woodImg img{
+    height: 50vh;
+    border: 3px solid 	#FFD700;
+    margin-left: 4vw;
+}
+
+.woodText {
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 3vh;
+    border-radius: 15px;
+}
+
+.woodText h1 {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    color: 	#FFD700;
+}
+
+.woodText p {
+    max-width: 30vw;
+    font-family: "Fanwood Text", serif;
+    font-size: 1.6rem;
+    color: white;
+    text-indent: 1.2rem;
+    text-align: justify;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.animate__animated.animate__fadeInDown, .animate__animated.animate__fadeInUp {
+    --animate-duration: 2.5s;
+}
+
+#aboutTitle {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#aboutTitle.animate__animated {
+    --animate-duration: 1.5s;
+    opacity: 1;
+}
+
+#menuHead {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#menuHead.animate__animated {
+    --animate-duration: 1.5s;
+    opacity: 1;
+}
+
+#pinAnimate1, #pinAnimate2, #pinAnimate3 {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#pinAnimate1.animate__animated, #pinAnimate2.animate__animated, #pinAnimate3.animate__animated {
+    --animate-duration: 1.5s;
+    opacity: 1;
+}
+
+.content {
+    position: relative;
+    height: 120vh;
+    background-image: url(/images/restaurantInterior.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(44, 44, 44, 0.87);
+    z-index: 0;
+}
+
+.contentTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh; padding-bottom: 10vh;
+}
+
+.content > * {
+    position: relative;
+    z-index: 2;
+}
+
+.containerDifferences {
+    margin-left: 10vw; margin-right: 10vw; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.difference1, .difference2, .difference3 {
+    border: 3px solid white;
+    height: 80vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+} 
+
+.differenceImg {
+    height: 30vh;
+    width: 30vh;
+    overflow: hidden;
+}
+
+.differenceImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.differenceTitle {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.8rem;
+    color: 	#FFD700;
+}
+
+.differenceContent {
+    font-family: "Fanwood Text", serif;
+    font-size: 1.3rem;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.contentTitle {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.8rem;
+    color: 	#FFD700;
+}
+
+.marble {
+    background-image: url(/images/marbleFloor.jpg);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menuImgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.menuImgs img{
+    height: 50vh;
+    border: 3px solid 	#FFD700;
+    margin-left: 4vw;
+}
+
+.menuInfo {
+    max-width: 50vw;
+}
+
+.menuInfo h1 {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-size: 6rem;
+    font-style: normal;
+    color: 	#63560d;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.menuInfo p {
+    font-family: "Fanwood Text", serif;
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    text-align: center;
+    max-width: 36vw;
+    font-weight: 500;
+}
+
+.pins {
+    position: relative;
+    height: 140vh;
+    background-image: url(/images/blurRestaurant.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pins::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.699);
+    z-index: 1;
+}
+
+.pins > * {
+    position: relative;
+    z-index: 2;
+}
+
+.pinsTitle {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-size: 5rem;
+    font-style: normal;
+    color: 	#f3f3f0;
+}
+
+.pinsDescription p{
+    max-width: 70vw;
+    font-family: "Fanwood Text", serif;
+    font-size: 1.8rem;
+    color: rgb(245, 243, 238);
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.pinsList {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.pinsIcons {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #bea932;
+    border-radius: 50%;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bea932;
+}
+
+.pin1, .pin2, .pin3  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pinTitle {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    font-style: normal;
+    color: 	#f3f3f0;
+    margin-bottom: 5vh;
+    color: #bea932;
+}
+
+.pinText {
+    text-align: center;
+    max-width: 20vw;
+    font-family: "Fanwood Text", serif;
+    font-size: 1.8rem;
+    color: rgb(245, 243, 238);
+    letter-spacing: 2px;
+}
+
+footer {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffee;
+    height: 25vh;
+    font-family: "Fanwood Text", serif;
+    font-size: 1.2rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footerInfos {
+    margin-left: 20vw; margin-right: 20vw;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.contact h1, .institutional h1, .adress h1{
+    font-family: "Fanwood Text", serif;
+    font-size: 1.6rem;
+    color: rgb(17, 17, 17);
+}
+
+.contactNumber, .contactEmail {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contactNumber p, .contactEmail p{
+    padding-left: 1vw;
+}
+
+.institutionalInfos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.adress h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
