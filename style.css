@@ -17,6 +17,10 @@ body, html {
     text-decoration: none;
 }
 
+#homeBtn:hover, #recipesBtn:hover, #aboutBtn:hover, #reviewsBtn:hover {
+    transition: 0.5;
+    transform: scale(2);
+}
 
 header {
     width: 100%;
