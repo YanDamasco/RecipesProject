@@ -1,7 +1,3 @@
-body {
-    height: 200vh;
-}
-
 .bannerMenu {
     position: relative;
     height: 100vh;
@@ -26,13 +22,12 @@ body {
 
 .tableMenu {
     position: relative;
-    height: 150vh;
     background-image: url(/images/menuTable.jpg);
     background-position: bottom;
     background-repeat: repeat;
     background-size: cover;
     z-index: 0;
-    padding-top: 10vh;
+    padding-top: 10vh; padding-bottom: 10vh;
 }
 
 .tableMenu::before {
