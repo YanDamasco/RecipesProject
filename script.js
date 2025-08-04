@@ -36,3 +36,7 @@ const observerDifferences = new IntersectionObserver((entries) => {
     const el = document.getElementById(id);
     if (el) observerDifferences.observe(el);
 });
+
+function alertNavBtns() {
+    alert("This button doesn't work because it's a portfolio project")
+}
