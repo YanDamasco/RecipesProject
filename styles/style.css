@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 * {
@@ -51,6 +53,10 @@ header {
 header.scrolling {
     background-color: #ffffeed5;
     padding: 3px 2%;
+}
+
+#header {
+    box-shadow: 5px 3px 3px 3px rgba(0, 0, 0, 0.274);
 }
 
 #auroraLogo {
@@ -129,18 +135,21 @@ header ul li {
 }
 
 .wood {
-    background-image: url(/images/woodenFloor.jpg);
+    background-image: url(/images/blackMarble3.jpg);
     width: 100%;
     height: 70vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .woodImg img{
     height: 50vh;
-    border: 3px solid 	#FFD700;
+    border: 3px solid 	#dad0a6;
     margin-left: 4vw;
 }
 
@@ -151,22 +160,26 @@ header ul li {
 }
 
 .woodText h1 {
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
+    font-family: "Sail", system-ui;
+    font-weight: bolder;
     font-style: normal;
-    font-size: 5rem;
-    color: 	#FFD700;
+    font-size: 4.5rem;
+    color: 	#240000;
+    text-shadow: #9b9477 1px 0 10px;
 }
 
 .woodText p {
     max-width: 30vw;
-    font-family: "Fanwood Text", serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
+    color: white;
+    letter-spacing: 1px;
     color: white;
     text-indent: 1.2rem;
     text-align: justify;
-    letter-spacing: 2px;
-    word-spacing: 5px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.6;
 }
 
 .animate__animated.animate__fadeInDown, .animate__animated.animate__fadeInUp {
@@ -206,7 +219,7 @@ header ul li {
 .content {
     position: relative;
     height: 120vh;
-    background-image: url(/images/restaurantInterior.jpg);
+    background-image: url(/images/wineBg.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -217,7 +230,7 @@ header ul li {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(44, 44, 44, 0.87);
+    background: rgba(15, 15, 15, 0.664);
     z-index: 0;
 }
 
@@ -241,13 +254,15 @@ header ul li {
 }
 
 .difference1, .difference2, .difference3 {
-    border: 3px solid white;
     height: 80vh;
     width: 20vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    background-color: #240000;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568);
 } 
 
 .differenceImg {
@@ -260,30 +275,37 @@ header ul li {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .differenceTitle {
     font-family: "Tangerine", cursive;
-    font-weight: 700;
+    font-family: "Sail", system-ui;
+    font-weight: bolder;
     font-style: normal;
-    font-size: 2.8rem;
-    color: 	#FFD700;
+    font-size: 1.8rem;
+    color: 	#dad0a6
 }
 
 .differenceContent {
-    font-family: "Fanwood Text", serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.3rem;
     color: white;
     letter-spacing: 2px;
     text-align: center;
+    padding: 0px 20px 0px 20px;
 }
 
 .contentTitle {
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
+    font-family: "Sail", system-ui;
+    font-weight: bolder;
     font-style: normal;
-    font-size: 2.8rem;
-    color: 	#FFD700;
+    font-size: 4.5rem;
+    color: 	#240000;
+}
+
+.contentTitle h1 {
+    text-shadow: #726d58 1px 0 10px;
 }
 
 .marble {
