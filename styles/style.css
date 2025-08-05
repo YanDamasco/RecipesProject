@@ -149,8 +149,9 @@ header ul li {
 
 .woodImg img{
     height: 50vh;
-    border: 3px solid 	#dad0a6;
     margin-left: 4vw;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px black;
 }
 
 .woodText {
@@ -164,7 +165,7 @@ header ul li {
     font-weight: bolder;
     font-style: normal;
     font-size: 4.5rem;
-    color: 	#240000;
+    color: 	#380000;
     text-shadow: #9b9477 1px 0 10px;
 }
 
@@ -260,7 +261,7 @@ header ul li {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    background-color: #240000;
+    background-color: #380000;
     border-radius: 25px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568);
 } 
@@ -301,7 +302,7 @@ header ul li {
     font-weight: bolder;
     font-style: normal;
     font-size: 4.5rem;
-    color: 	#240000;
+    color: 	#380000;
 }
 
 .contentTitle h1 {
@@ -329,33 +330,41 @@ header ul li {
 
 .menuImgs img{
     height: 50vh;
-    border: 3px solid 	#FFD700;
     margin-left: 4vw;
+    border-radius: 25px;
+    box-shadow: 5px 5px 8px black;
 }
 
 .menuInfo {
     max-width: 50vw;
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 25px;
 }
 
 .menuInfo h1 {
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
-    font-size: 6rem;
+    font-family: "Sail", system-ui;
+    font-weight: bolder;
     font-style: normal;
-    color: 	#63560d;
+    font-size: 4.5rem;
+    color: 	#380000;
+    text-shadow: #3f070580 1px 0 10px;
     letter-spacing: 2px;
     text-align: center;
     margin-bottom: 4vh;
 }
 
 .menuInfo p {
-    font-family: "Fanwood Text", serif;
+    max-width: 40vw;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
     color: rgb(0, 0, 0);
-    letter-spacing: 2px;
-    text-align: center;
-    max-width: 36vw;
-    font-weight: 500;
+    letter-spacing: 1px;
+    text-indent: 1.2rem;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    padding: 0 1vw 1vw 1vw ;
 }
 
 .pins {
