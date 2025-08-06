@@ -1,0 +1,77 @@
+.bannerAboutUs {
+    position: relative;
+    height: 100vh;
+    background-image: url(/images/aboutUsTitle.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+}
+
+.bannerAboutUs h1 {
+    font-family: "Sail", system-ui;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 4.5rem;
+    color: 	#dad0a6;
+    text-shadow: #000000 1px 0 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.contentAboutUs {
+    position: relative;
+    background-image: url(/images/aboutUsBG.jpg);
+    background-position: bottom;
+    background-repeat: repeat;
+    background-size: cover;
+    z-index: 0;
+    padding-top: 10vh; padding-bottom: 10vh;
+    height: 120vh;
+}
+
+.contentAboutUs::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.075);
+    z-index: 0;
+}
+
+.aboutUsTitle h1 {
+    font-family: "Sail", system-ui;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 4.5rem;
+    color: 	#024D5C;
+    text-shadow: #005f72 1px 0 10px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.aboutUsP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.aboutUsP p {
+    margin-top: 5vh;
+    font-size: 1.5rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #001822;
+    letter-spacing: 0.2rem;
+    max-width: 70vw;
+    display: flex;
+    text-align: center;
+}
