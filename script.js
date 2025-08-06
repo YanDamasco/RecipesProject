@@ -23,6 +23,14 @@ observerAbout.observe(pinAnimate1);
 observerAbout.observe(pinAnimate2);
 observerAbout.observe(pinAnimate3);
 
+const pinIcon1 = document.getElementById("pinIcon1");
+const pinIcon2 = document.getElementById("pinIcon2");
+const pinIcon3 = document.getElementById("pinIcon3");
+
+observerAbout.observe(pinIcon1);
+observerAbout.observe(pinIcon2);
+observerAbout.observe(pinIcon3);
+
 
 const observerDifferences = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
