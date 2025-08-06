@@ -38,7 +38,7 @@
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.856);
+    background: rgba(0, 0, 0, 0.877);
     z-index: 0;
 }
 
@@ -64,8 +64,9 @@
     width: 29vh;
     height: 29vh;
     flex-shrink: 0;
-    border: 5px solid black;
+    border-radius: 25px;
     overflow: hidden;
+    box-shadow: 5px 5px 8px black;
 }
 
 .item1img img,
@@ -137,7 +138,7 @@
 
 .tableMenu2 {
     position: relative;
-    background-image: url(/images/menuTable2.jpg);
+    background-image: url(/images/menuTable.jpg);
     background-position: bottom;
     background-repeat: repeat;
     background-size: cover;
@@ -149,6 +150,6 @@
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.815);
+    background: rgba(0, 0, 0, 0.89);
     z-index: 0;
 }
