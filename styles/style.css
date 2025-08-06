@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 
 * {
@@ -171,7 +171,9 @@ header ul li {
 
 .woodText p {
     max-width: 30vw;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1.6rem;
     color: white;
     letter-spacing: 1px;
@@ -289,7 +291,9 @@ header ul li {
 }
 
 .differenceContent {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1.3rem;
     color: white;
     letter-spacing: 2px;
@@ -355,8 +359,10 @@ header ul li {
 
 .menuInfo p {
     max-width: 40vw;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
     text-indent: 1.2rem;
@@ -394,17 +400,22 @@ header ul li {
 }
 
 .pinsTitle {
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
-    font-size: 5rem;
+    font-family: "Sail", system-ui;
+    font-weight: bolder;
     font-style: normal;
-    color: 	#f3f3f0;
+    font-size: 4.5rem;
+    color: 	#dad0a6;
+    text-shadow: #3f070580 1px 0 10px;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 .pinsDescription p{
     max-width: 70vw;
-    font-family: "Fanwood Text", serif;
-    font-size: 1.8rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
     color: rgb(245, 243, 238);
     letter-spacing: 2px;
     text-align: center;
@@ -423,13 +434,13 @@ header ul li {
 .pinsIcons {
     width: 80px;
     height: 80px;
-    border: 3px solid #bea932;
+    border: 3px solid #dad0a6;
     border-radius: 50%;
     font-size: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #bea932;
+    color: #dad0a6;
 }
 
 .pin1, .pin2, .pin3  {
@@ -440,20 +451,24 @@ header ul li {
 }
 
 .pinTitle {
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
-    font-size: 3rem;
+    font-family: "Sail", system-ui;
+    font-weight: bolder;
     font-style: normal;
-    color: 	#f3f3f0;
-    margin-bottom: 5vh;
-    color: #bea932;
+    font-size: 2rem;
+    color: 	#dad0a6;
+    text-shadow: #3f070580 1px 0 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 3vh;
 }
 
 .pinText {
     text-align: center;
     max-width: 20vw;
-    font-family: "Fanwood Text", serif;
-    font-size: 1.8rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
     color: rgb(245, 243, 238);
     letter-spacing: 2px;
 }
@@ -464,7 +479,9 @@ footer {
     left: 0;
     background-color: #ffffee;
     height: 25vh;
-    font-family: "Fanwood Text", serif;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1.2rem;
 }
 
@@ -482,9 +499,12 @@ footer {
 }
 
 .contact h1, .institutional h1, .adress h1{
-    font-family: "Fanwood Text", serif;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1.6rem;
     color: rgb(17, 17, 17);
+    margin-bottom: 1vh;
 }
 
 .contactNumber, .contactEmail {
