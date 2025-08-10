@@ -48,3 +48,7 @@ const observerDifferences = new IntersectionObserver((entries) => {
 function alertNavBtns() {
     alert("This button doesn't work because it's a portfolio project")
 }
+
+document.querySelector(".homeBtn").addEventListener("click", () => {
+    window.location.href = "index.html"
+})

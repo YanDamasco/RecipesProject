@@ -75,3 +75,31 @@
     display: flex;
     text-align: center;
 }
+
+.buttonHomePage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7vh;
+}
+
+.buttonHomePage .homeBtn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #005f72;
+    color: #dad0a6;
+    width: 8vw;
+    height: 6vh;
+    line-height: 6vh;
+    border-radius: 50px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.3rem;
+    transition: transform 0.6s ease;
+    z-index: 2;
+}
+
+.buttonHomePage .homeBtn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
