@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
 
 
 * {
@@ -135,7 +136,7 @@ header ul li {
 }
 
 .wood {
-    background-image: url(/images/blackMarble3.jpg);
+    background-image: url(/images/marbleFirstBg.jpg);
     width: 100%;
     height: 70vh;
     display: flex;
@@ -155,18 +156,17 @@ header ul li {
 }
 
 .woodText {
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: rgba(0, 0, 0, 0.61);
     padding: 3vh;
     border-radius: 15px;
 }
 
 .woodText h1 {
-    font-family: "Sail", system-ui;
-    font-weight: bolder;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 4.5rem;
-    color: 	#380000;
-    text-shadow: #9b9477 1px 0 10px;
+    font-size: 4rem;
+    color: 	#ecb131;
 }
 
 .woodText p {
@@ -229,9 +229,10 @@ header ul li {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    background-color: #380000;
     border-radius: 25px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568);
+    border: 3px solid #ecb131;
+    background-color: rgba(0, 0, 0, 0.651);
 } 
 
 .differenceImg {
@@ -248,12 +249,11 @@ header ul li {
 }
 
 .differenceTitle {
-    font-family: "Tangerine", cursive;
-    font-family: "Sail", system-ui;
-    font-weight: bolder;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 1.8rem;
-    color: 	#dad0a6
+    font-size: 1.5rem;
+    color: 	#ecb131;
 }
 
 .differenceContent {
@@ -268,15 +268,11 @@ header ul li {
 }
 
 .contentTitle {
-    font-family: "Sail", system-ui;
-    font-weight: bolder;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 4.5rem;
-    color: 	#380000;
-}
-
-.contentTitle h1 {
-    text-shadow: #726d58 1px 0 10px;
+    font-size: 4rem;
+    color: 	#ecb131;
 }
 
 .marble {
@@ -307,20 +303,21 @@ header ul li {
 
 .menuInfo {
     max-width: 50vw;
-    background-color: rgba(0, 0, 0, 0.438);
+    background-color: rgba(0, 0, 0, 0.61);
     border-radius: 25px;
 }
 
 .menuInfo h1 {
-    font-family: "Sail", system-ui;
-    font-weight: bolder;
-    font-style: normal;
-    font-size: 4.5rem;
-    color: 	#380000;
-    text-shadow: #3f070580 1px 0 10px;
-    letter-spacing: 2px;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: 	#ecb131;
     margin-bottom: 4vh;
+    margin-top: 2vh;
 }
 
 .menuInfo p {
@@ -329,7 +326,7 @@ header ul li {
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
-    color: rgb(0, 0, 0);
+    color: rgb(247, 247, 247);
     letter-spacing: 1px;
     text-indent: 1.2rem;
     text-align: justify;
@@ -366,13 +363,11 @@ header ul li {
 }
 
 .pinsTitle {
-    font-family: "Sail", system-ui;
-    font-weight: bolder;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 4.5rem;
-    color: 	#dad0a6;
-    text-shadow: #3f070580 1px 0 10px;
-    letter-spacing: 2px;
+    font-size: 5rem;
+    color: 	#ecb131;
     text-align: center;
 }
 
@@ -400,13 +395,13 @@ header ul li {
 .pinsIcons {
     width: 80px;
     height: 80px;
-    border: 3px solid #dad0a6;
+    border: 3px solid #ecb131;
     border-radius: 50%;
     font-size: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #dad0a6;
+    color: #ecb131;
 }
 
 .pin1, .pin2, .pin3  {
@@ -417,13 +412,11 @@ header ul li {
 }
 
 .pinTitle {
-    font-family: "Sail", system-ui;
-    font-weight: bolder;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 2rem;
-    color: 	#dad0a6;
-    text-shadow: #3f070580 1px 0 10px;
-    letter-spacing: 2px;
+    color: 	#ecb131;
     text-align: center;
     margin-bottom: 3vh;
 }
