@@ -13,10 +13,10 @@
 }
 
 .bannerAboutUs h1 {
-    font-family: "Sail", system-ui;
-    font-weight: bolder;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: 	#dad0a6;
     text-shadow: #000000 1px 0 10px;
     letter-spacing: 2px;
@@ -44,10 +44,10 @@
 }
 
 .aboutUsTitle h1 {
-    font-family: "Sail", system-ui;
-    font-weight: bolder;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: 	#024D5C;
     text-shadow: #005f72 1px 0 10px;
     letter-spacing: 2px;
@@ -100,6 +100,8 @@
 }
 
 .buttonHomePage .homeBtn:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
+    color: #005f72;
+    background-color: #e9e5d8;
 }

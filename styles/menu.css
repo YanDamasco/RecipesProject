@@ -13,13 +13,13 @@
 }
 
 .bannerMenu h1 {
-    font-family: "Sail", system-ui;
-    font-weight: bolder;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 4.5rem;
-    color: 	#dad0a6;
-    text-shadow: #3f070580 1px 0 10px;
+    font-size: 4rem;
+    color: 	#ecb131;
     letter-spacing: 2px;
+    text-shadow: #ffe6c580 3px 0 10px;
     text-align: center;
     margin-top: 10vh;
 }
@@ -126,12 +126,12 @@
 }
 
 .bannerMenu2 h1 {
-    font-family: "Sail", system-ui;
-    font-weight: bolder;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 4.5rem;
-    color: 	#dad0a6;
-    text-shadow: #3f070580 1px 0 10px;
+    font-size: 4rem;
+    color: 	#ecb131;
+    text-shadow: #ffe6c580 3px 0 10px;
     letter-spacing: 2px;
     text-align: center;
 }

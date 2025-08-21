@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.reviewsBanner {
+    position: relative;
+    height: 100vh;
+    background-image: url(/images/aboutUsTitle.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+}
+
+.reviewsTitle h1 {
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: 	#dad0a6;
+    text-shadow: #000000 1px 0 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.contentReviews {
+    position: relative;
+    background-image: url(/images/cozyAmbient.jpg);
+    background-position: bottom;
+    background-repeat: repeat;
+    background-size: cover;
+    z-index: 0;
+    padding-top: 10vh; padding-bottom: 10vh;
+    height: 120vh;
+}
+
+.contentReviews::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.76);
+    z-index: 0;
+}

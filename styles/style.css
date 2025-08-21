@@ -174,7 +174,7 @@ header ul li {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: white;
     letter-spacing: 1px;
     color: white;
@@ -464,6 +464,9 @@ footer {
     font-size: 1rem;
     color: rgb(17, 17, 17);
     margin-bottom: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contactNumber, .contactEmail {
@@ -480,14 +483,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .institutionalInfos a {
     text-decoration: none;
     color: rgb(17, 17, 17);
     font-size: 0.8rem;
-    padding: 5px;
+    padding: 1vh 2vw;
 }
 
 .adress h1 {
