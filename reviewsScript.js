@@ -1,6 +1,6 @@
-const img = document.getElementById("personImg");
-const author = document.getElementById("author");
-const review = document.getElementById("review");
+const img = document.querySelector(".profile");
+const author = document.querySelector(".profileName");
+const review = document.querySelector(".reviewText p");
 
 const prevBtn = document.querySelector(".prevBtn");
 const nextBtn = document.querySelector(".nextBtn");
@@ -16,7 +16,6 @@ function showPerson(person) {
     const item = reviews[person];
     img.src = item.img;
     author.textContent = item.name;
-    job.textContent = item.job;
     review.textContent = item.text;
 };
 
