@@ -158,5 +158,5 @@ body, html {
 
 .prevBtn:active, .nextBtn:active {
     transform: translateY(5px);
-    transition: 150ms;
+    transition: 120ms;
 }
