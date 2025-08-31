@@ -534,6 +534,6 @@ footer {
 #pinIcon1.animate__animated,
 #pinIcon2.animate__animated,
 #pinIcon3.animate__animated {
-    --animate-duration: 1.6s;
+    --animate-duration: 1.5s;
     opacity: 1;
 }
