@@ -1,72 +1,94 @@
 .bannerMenu {
-    position: relative;
-    height: 100vh;
-    background-image: url(/images/textureMenu.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 40vh;
+  position: relative;
+  height: 100vh;
+  background-image: url(/images/textureMenu.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
 }
 
 .bannerMenu h1 {
-    font-family: "Luxurious Roman", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    color: 	#ecb131;
-    letter-spacing: 2px;
-    text-shadow: #ffe6c580 3px 0 10px;
-    text-align: center;
-    margin-top: 10vh;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  color: #ecb131;
+  letter-spacing: 2px;
+  text-shadow: #ffe6c580 3px 0 10px;
+  text-align: center;
+  margin-top: 10vh;
 }
 
 .tableMenu {
-    position: relative;
-    background-image: url(/images/menuTable.jpg);
-    background-position: bottom;
-    background-repeat: repeat;
-    background-size: cover;
-    z-index: 0;
-    padding-top: 10vh; padding-bottom: 10vh;
+  position: relative;
+  background-image: url(/images/menuTable.jpg);
+  background-position: bottom;
+  background-repeat: repeat;
+  background-size: cover;
+  z-index: 0;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .tableMenu::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.877);
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.877);
+  z-index: 0;
 }
 
-.menuItems1, .menuItems2, .menuItems3, .menuItems4 {
-    position: relative;
-    z-index: 1;
-    margin-left: 20vw; margin-right: 10vw;
-    display: flex;
-    flex-direction: row;
+.menuItems1,
+.menuItems2,
+.menuItems3,
+.menuItems4 {
+  position: relative;
+  z-index: 1;
+  margin-left: 20vw;
+  margin-right: 10vw;
+  display: flex;
+  flex-direction: row;
 }
 
-.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8  {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 3vh;
-    width: 100%;
-    gap: 1rem;
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 3vh;
+  width: 100%;
+  gap: 1rem;
 }
 
-.item1img, .item2img, .item3img, .item4img, .item5img, .item6img, .item7img, .item8img {
-    width: 29vh;
-    height: 29vh;
-    flex-shrink: 0;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 5px 5px 8px black;
+.item1img,
+.item2img,
+.item3img,
+.item4img,
+.item5img,
+.item6img,
+.item7img,
+.item8img {
+  width: 29vh;
+  height: 29vh;
+  flex-shrink: 0;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 5px 5px 8px black;
 }
 
 .item1img img,
@@ -77,79 +99,97 @@
 .item6img img,
 .item7img img,
 .item8img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.item1 h2, .item2 h2, .item3 h2, .item4 h2, .item5 h2, .item6 h2, .item7 h2, .item8 h2 {
-    margin: 0;
-    max-width: 40vw;
-    word-wrap: break-word;
-    font-size: 1.6rem;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
-    letter-spacing: 0.2rem;
+.item1 h2,
+.item2 h2,
+.item3 h2,
+.item4 h2,
+.item5 h2,
+.item6 h2,
+.item7 h2,
+.item8 h2 {
+  margin: 0;
+  max-width: 40vw;
+  word-wrap: break-word;
+  font-size: 1.6rem;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  letter-spacing: 0.2rem;
 }
 
 .itemContent {
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  letter-spacing: 0.2rem;
 }
 
-.item1 p, .item2 p, .item3 p, .item4 p, .item5 p, .item6 p, .item7 p, .item8 p {
-    padding-top: 2vh;
+.item1 p,
+.item2 p,
+.item3 p,
+.item4 p,
+.item5 p,
+.item6 p,
+.item7 p,
+.item8 p {
+  padding-top: 2vh;
 }
 
 /* second section */
 
 .bannerMenu2 {
-    position: relative;
-    height: 100vh;
-    background-image: url(/images/textureMenu.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 40vh;
+  position: relative;
+  height: 100vh;
+  background-image: url(/images/textureMenu.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
 }
 
 .bannerMenu2 h1 {
-    font-family: "Luxurious Roman", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    color: 	#ecb131;
-    text-shadow: #ffe6c580 3px 0 10px;
-    letter-spacing: 2px;
-    text-align: center;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  color: #ecb131;
+  text-shadow: #ffe6c580 3px 0 10px;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .tableMenu2 {
-    position: relative;
-    background-image: url(/images/menuTable.jpg);
-    background-position: bottom;
-    background-repeat: repeat;
-    background-size: cover;
-    z-index: 0;
-    padding-top: 10vh; padding-bottom: 10vh;
+  position: relative;
+  background-image: url(/images/menuTable.jpg);
+  background-position: bottom;
+  background-repeat: repeat;
+  background-size: cover;
+  z-index: 0;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .tableMenu2::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.89);
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.89);
+  z-index: 0;
 }

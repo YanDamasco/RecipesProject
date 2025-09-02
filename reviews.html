@@ -1,107 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/wine-bottle.png" type="image/x-icon">
-    <link rel="shortcut icon" href="/images/wine-bottle.png" type="image/x-icon"> <!-- used in older browsers, like Internet Explorer -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/reviews.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/wine-bottle.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="/images/wine-bottle.png"
+      type="image/x-icon"
+    />
+    <!-- used in older browsers, like Internet Explorer -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/reviews.css" />
     <title>Aurora Restaurant</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <div class="container">
-            <div class="flex">
-                <img src="/images/AuroraLogo.png" alt="aurora-logo" id="auroraLogo">
-                <nav>
-                    <ul class="navBtns">
-                        <li><a href="index.html" id="homeBtn">HOME</a></li>
-                        <li><a href="menu.html" id="menuBtn">MENU</a></li>
-                        <li><a href="aboutus.html" id="aboutBtn">ABOUT US</a></li>
-                        <li><a href="reviews.html" id="reviewsBtn">REVIEWS</a></li>
-                    </ul>
-                </nav>
-                <nav>
-                    <ul class="socialMedias">
-                        <li><i class="fa-brands fa-facebook" onclick="alertNavBtns()" id="socialMediasBtn"></i></li>
-                        <li><i class="fa-brands fa-instagram" onclick="alertNavBtns()" id="socialMediasBtn"></i></li>
-                        <li><i class="fa-brands fa-whatsapp" onclick="alertNavBtns()" id="socialMediasBtn"></i></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="flex">
+          <img src="/images/AuroraLogo.png" alt="aurora-logo" id="auroraLogo" />
+          <nav>
+            <ul class="navBtns">
+              <li><a href="index.html" id="homeBtn">HOME</a></li>
+              <li><a href="menu.html" id="menuBtn">MENU</a></li>
+              <li><a href="aboutus.html" id="aboutBtn">ABOUT US</a></li>
+              <li><a href="reviews.html" id="reviewsBtn">REVIEWS</a></li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="socialMedias">
+              <li>
+                <i
+                  class="fa-brands fa-facebook"
+                  onclick="alertNavBtns()"
+                  id="socialMediasBtn"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-instagram"
+                  onclick="alertNavBtns()"
+                  id="socialMediasBtn"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-whatsapp"
+                  onclick="alertNavBtns()"
+                  id="socialMediasBtn"
+                ></i>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
     <main>
-        <section class="reviewsBanner">
-            <div class="reviewsTitle">
-                <h1 class="animate__animated animate__fadeInDown">Reviews</h1>
-            </div>
-        </section>
-        <section class="contentReviews">
-            <div class="reviewsBody">
-                <div class="profileContent">
-                    <img src="./peopleImages/Ava Rodriguez.jpeg" alt="" class="profile">
-                    <h1 class="profileName">
-                        Jonas Teixeira
-                    </h1>
-                </div>
-                <div class="reviewText">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit deserunt voluptatem perferendis? Delectus numquam, iusto suscipit excepturi ullam eum vitae eius asperiores obcaecati odit reiciendis optio vero qui perspiciatis.
-                    </p>
-                </div>
-                <div class="buttons">
-                <button class="prevBtn">
-                    <i class="fa-solid fa-chevron-left previous" aria-label="Previous"></i>
-                </button>
-                <button class="nextBtn">
-                    <i class="fa-solid fa-chevron-right next" aria-label="Next"></i>
-                </button>
-            </div>
-                <div class="buttonSurprise">
-                    <button class="randomBtn">Surprise me!</button>
-                </div>
-            </div>
-        </section>
+      <section class="reviewsBanner">
+        <div class="reviewsTitle">
+          <h1 class="animate__animated animate__fadeInDown">Reviews</h1>
+        </div>
+      </section>
+      <section class="contentReviews">
+        <div class="reviewsBody">
+          <div class="profileContent">
+            <img
+              src="./peopleImages/Ava Rodriguez.jpeg"
+              alt=""
+              class="profile"
+            />
+            <h1 class="profileName">Jonas Teixeira</h1>
+          </div>
+          <div class="reviewText">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus suscipit deserunt voluptatem perferendis? Delectus
+              numquam, iusto suscipit excepturi ullam eum vitae eius asperiores
+              obcaecati odit reiciendis optio vero qui perspiciatis.
+            </p>
+          </div>
+          <div class="buttons">
+            <button class="prevBtn">
+              <i
+                class="fa-solid fa-chevron-left previous"
+                aria-label="Previous"
+              ></i>
+            </button>
+            <button class="nextBtn">
+              <i class="fa-solid fa-chevron-right next" aria-label="Next"></i>
+            </button>
+          </div>
+          <div class="buttonSurprise">
+            <button class="randomBtn">Surprise me!</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="footerInfos">
-            <div class="contact">
-                <h1>Contact</h1>
-                <div class="contactNumber">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>(XX) XXXXX-XXXX</p>
-                </div>
-                <div class="contactEmail">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>AuroraOfficial@xxxxx.com</p>
-                </div>
-            </div>
-            <div class="institutional">
-                <h1>Institutional</h1>
-                <div class="institutionalInfos">
-                    <a href="index.html" id="homeBtn">HOME</a>
-                    <a href="menu.html" id="menuBtn">MENU</a>
-                    <a href="aboutus.html" id="aboutBtn">ABOUT US</a>
-                    <a href="reviews.html" id="reviewsBtn">REVIEWS</a>
-                </div>
-            </div>
-            <div class="adress">
-                <h1>Adress</h1>
-                <div class="adressInfo">
-                    <p>123 Aurora Lane, OR 97201, USA</p>
-                </div>
-            </div>
+      <div class="footerInfos">
+        <div class="contact">
+          <h1>Contact</h1>
+          <div class="contactNumber">
+            <i class="fa-solid fa-phone"></i>
+            <p>(XX) XXXXX-XXXX</p>
+          </div>
+          <div class="contactEmail">
+            <i class="fa-solid fa-envelope"></i>
+            <p>AuroraOfficial@xxxxx.com</p>
+          </div>
         </div>
-        <div class="copyright">
-            <p>© 2025 Aurora Restaurant. All rights reserved. Website created by Yan Damasco.</p>
+        <div class="institutional">
+          <h1>Institutional</h1>
+          <div class="institutionalInfos">
+            <a href="index.html" id="homeBtn">HOME</a>
+            <a href="menu.html" id="menuBtn">MENU</a>
+            <a href="aboutus.html" id="aboutBtn">ABOUT US</a>
+            <a href="reviews.html" id="reviewsBtn">REVIEWS</a>
+          </div>
         </div>
+        <div class="adress">
+          <h1>Adress</h1>
+          <div class="adressInfo">
+            <p>123 Aurora Lane, OR 97201, USA</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © 2025 Aurora Restaurant. All rights reserved. Website created by Yan
+          Damasco.
+        </p>
+      </div>
     </footer>
-<script src="https://kit.fontawesome.com/01850773a2.js" crossorigin="anonymous"></script>
-<script src="data.js"></script>    
-<script src="script.js"></script>
-<script src="reviewsScript.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/01850773a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="reviewsScript.js"></script>
+  </body>
 </html>

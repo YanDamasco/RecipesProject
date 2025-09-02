@@ -1,517 +1,543 @@
-@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html {
-    overflow-x: hidden;
+body,
+html {
+  overflow-x: hidden;
 }
 
 .navBtns a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
-#homeBtn, #menuBtn, #aboutBtn, #reviewsBtn {
-    display: inline-block;
-    transition: transform 0.3s;
+#homeBtn,
+#menuBtn,
+#aboutBtn,
+#reviewsBtn {
+  display: inline-block;
+  transition: transform 0.3s;
 }
 
-#homeBtn:hover,  #menuBtn:hover, #aboutBtn:hover , #reviewsBtn:hover{
-    transform: scale(1.3);
-    font-weight: 700;
+#homeBtn:hover,
+#menuBtn:hover,
+#aboutBtn:hover,
+#reviewsBtn:hover {
+  transform: scale(1.3);
+  font-weight: 700;
 }
 
 #socialMediasBtn {
-    display: inline-block;
-    transition: transform 0.3s;
+  display: inline-block;
+  transition: transform 0.3s;
 }
 
 #socialMediasBtn:hover {
-    transform: scale(1.8);
-    cursor: pointer;
+  transform: scale(1.8);
+  cursor: pointer;
 }
 
 header {
-    width: 100%;
-    padding: 20px 4%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background-color: #f3f8f8;
-    transition: 0.5s;
+  width: 100%;
+  padding: 20px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #f3f8f8;
+  transition: 0.5s;
 }
 
 header.scrolling {
-    background-color: #f3f8f8c7;
-    padding: 3px 2%;
+  background-color: #f3f8f8c7;
+  padding: 3px 2%;
 }
 
 #header {
-    box-shadow: 5px 3px 3px 3px rgba(0, 0, 0, 0.274);
+  box-shadow: 5px 3px 3px 3px rgba(0, 0, 0, 0.274);
 }
 
 #auroraLogo {
-    height: 80px;
+  height: 80px;
 }
 
 .container {
-    max-width: 1280px;
-    margin: auto;
+  max-width: 1280px;
+  margin: auto;
 }
 
 .flex {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .navBtns {
-    font-family: "Fanwood Text", serif;
-    font-weight: 500;
-    font-style: italic;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
+  font-family: "Fanwood Text", serif;
+  font-weight: 500;
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
 }
 
 header ul li {
-    display: inline-block;
-    margin: 0 30px;
+  display: inline-block;
+  margin: 0 30px;
 }
 
 .banner {
-    position: relative;
-    height: 100vh;
-    background-image: url(/images/restaurantBg.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background-image: url(/images/restaurantBg.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .banner::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.486);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.486);
+  z-index: 1;
 }
 
 .banner h1 {
-    font-size: 8rem;
-    position: relative;
-    z-index: 2;
-    color: white;
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
-    font-style: normal;
+  font-size: 8rem;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .bannerInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bannerInfo h2 {
-    z-index: 2;
-    font-family: "Fanwood Text", serif;
-    font-weight: 500;
-    font-style: italic;
-    color: white;
+  z-index: 2;
+  font-family: "Fanwood Text", serif;
+  font-weight: 500;
+  font-style: italic;
+  color: white;
 }
 
 .wood {
-    background-image: url(/images/marbleFirstBg.jpg);
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url(/images/marbleFirstBg.jpg);
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.woodImg img{
-    height: 50vh;
-    margin-left: 4vw;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px black;
+.woodImg img {
+  height: 50vh;
+  margin-left: 4vw;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px black;
 }
 
 .woodText {
-    background-color: rgba(0, 0, 0, 0.61);
-    padding: 3vh;
-    border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.61);
+  padding: 3vh;
+  border-radius: 15px;
 }
 
 .woodText h1 {
-    font-family: "Luxurious Roman", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    color: 	#ecb131;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  color: #ecb131;
 }
 
 .woodText p {
-    max-width: 30vw;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.4rem;
-    color: white;
-    text-indent: 1.2rem;
-    text-align: justify;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    line-height: 1.6;
+  max-width: 30vw;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: white;
+  text-indent: 1.2rem;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 1.6;
 }
 
 .content {
-    position: relative;
-    height: 120vh;
-    background-image: url(/images/wineBg.jpg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
+  position: relative;
+  height: 120vh;
+  background-image: url(/images/wineBg.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
 }
 
 .content::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(15, 15, 15, 0.664);
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 15, 15, 0.664);
+  z-index: 0;
 }
 
 .contentTitle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10vh; padding-bottom: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .content > * {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .containerDifferences {
-    margin-left: 10vw; margin-right: 10vw; 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.difference1, .difference2, .difference3 {
-    height: 80vh;
-    width: 20vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    border-radius: 25px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568);
-    border: 3px solid #ecb131;
-    background-color: rgba(0, 0, 0, 0.651);
-} 
+.difference1,
+.difference2,
+.difference3 {
+  height: 80vh;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568);
+  border: 3px solid #ecb131;
+  background-color: rgba(0, 0, 0, 0.651);
+}
 
 .differenceImg {
-    height: 30vh;
-    width: 30vh;
-    overflow: hidden;
+  height: 30vh;
+  width: 30vh;
+  overflow: hidden;
 }
 
 .differenceImg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .differenceTitle {
-    font-family: "Luxurious Roman", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    color: 	#ecb131;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #ecb131;
 }
 
 .differenceContent {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.3rem;
-    color: white;
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 0px 20px 0px 20px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 0px 20px 0px 20px;
 }
 
 .contentTitle {
-    font-family: "Luxurious Roman", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    color: 	#ecb131;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  color: #ecb131;
 }
 
 .marble {
-    background-image: url(/images/marbleFloor.jpg);
-    width: 100%;
-    height: 70vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
+  background-image: url(/images/marbleFloor.jpg);
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .menuImgs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.menuImgs img{
-    height: 50vh;
-    margin-left: 4vw;
-    border-radius: 25px;
-    box-shadow: 5px 5px 8px black;
+.menuImgs img {
+  height: 50vh;
+  margin-left: 4vw;
+  border-radius: 25px;
+  box-shadow: 5px 5px 8px black;
 }
 
 .menuInfo {
-    max-width: 50vw;
-    background-color: rgba(0, 0, 0, 0.61);
-    border-radius: 25px;
+  max-width: 50vw;
+  background-color: rgba(0, 0, 0, 0.61);
+  border-radius: 25px;
 }
 
 .menuInfo h1 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-family: "Luxurious Roman", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    color: 	#ecb131;
-    margin-bottom: 4vh;
-    margin-top: 2vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  color: #ecb131;
+  margin-bottom: 4vh;
+  margin-top: 2vh;
 }
 
 .menuInfo p {
-    max-width: 40vw;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    color: rgb(247, 247, 247);
-    letter-spacing: 1px;
-    text-indent: 1.2rem;
-    text-align: justify;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    line-height: 1.6;
-    padding: 0 1vw 1vw 1vw ;
+  max-width: 40vw;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: rgb(247, 247, 247);
+  letter-spacing: 1px;
+  text-indent: 1.2rem;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 1.6;
+  padding: 0 1vw 1vw 1vw;
 }
 
 .pins {
-    position: relative;
-    height: 140vh;
-    background-image: url(/images/blurRestaurant.jpg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  position: relative;
+  height: 140vh;
+  background-image: url(/images/blurRestaurant.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .pins::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.699);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.699);
+  z-index: 1;
 }
 
 .pins > * {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .pinsTitle {
-    font-family: "Luxurious Roman", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5rem;
-    color: 	#ecb131;
-    text-align: center;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  color: #ecb131;
+  text-align: center;
 }
 
-.pinsDescription p{
-    max-width: 70vw;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.6rem;
-    color: rgb(245, 243, 238);
-    letter-spacing: 2px;
-    text-align: center;
-    margin-bottom: 10vh;
-    margin-top: 10vh;
+.pinsDescription p {
+  max-width: 70vw;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: rgb(245, 243, 238);
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
 }
 
 .pinsList {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .pinsIcons {
-    width: 80px;
-    height: 80px;
-    border: 3px solid #ecb131;
-    border-radius: 50%;
-    font-size: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ecb131;
+  width: 80px;
+  height: 80px;
+  border: 3px solid #ecb131;
+  border-radius: 50%;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ecb131;
 }
 
-.pin1, .pin2, .pin3  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.pin1,
+.pin2,
+.pin3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .pinTitle {
-    font-family: "Luxurious Roman", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-    color: 	#ecb131;
-    text-align: center;
-    margin-bottom: 3vh;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #ecb131;
+  text-align: center;
+  margin-bottom: 3vh;
 }
 
 .pinText {
-    text-align: center;
-    max-width: 20vw;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    color: rgb(245, 243, 238);
-    letter-spacing: 2px;
+  text-align: center;
+  max-width: 20vw;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: rgb(245, 243, 238);
+  letter-spacing: 2px;
 }
 
 footer {
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #f3f8f8;
-    height: 17vh;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 0.7rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f3f8f8;
+  height: 17vh;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.7rem;
 }
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .footerInfos {
-    margin-left: 20vw; margin-right: 20vw;
-    display: flex;
-    align-items: top;
-    justify-content: space-between;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
 }
 
-.contact h1, .institutional h1, .adress h1{
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1rem;
-    color: rgb(17, 17, 17);
-    margin-bottom: 1vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact h1,
+.institutional h1,
+.adress h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: rgb(17, 17, 17);
+  margin-bottom: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contactNumber, .contactEmail {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+.contactNumber,
+.contactEmail {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
-.contactNumber p, .contactEmail p{
-    padding-left: 1vw;
+.contactNumber p,
+.contactEmail p {
+  padding-left: 1vw;
 }
 
 .institutionalInfos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .institutionalInfos a {
-    text-decoration: none;
-    color: rgb(17, 17, 17);
-    font-size: 0.8rem;
-    padding: 1vh 2vw;
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+  font-size: 0.8rem;
+  padding: 1vh 2vw;
 }
 
 .adress h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .copyright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* === ANIMAÇÕES === */
 .animate__animated.animate__fadeInDown,
 .animate__animated.animate__fadeInUp {
-    --animate-duration: 2.5s;
+  --animate-duration: 2.5s;
 }
 
 #aboutTitle,
@@ -522,8 +548,8 @@ footer {
 #pinIcon1,
 #pinIcon2,
 #pinIcon3 {
-    opacity: 0;
-    transition: opacity 0.3s;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 #aboutTitle.animate__animated,
@@ -534,6 +560,6 @@ footer {
 #pinIcon1.animate__animated,
 #pinIcon2.animate__animated,
 #pinIcon3.animate__animated {
-    --animate-duration: 1.6s;
-    opacity: 1;
+  --animate-duration: 1.6s;
+  opacity: 1;
 }
