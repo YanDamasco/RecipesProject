@@ -13,7 +13,6 @@ html {
 
 .reviewsBanner {
   position: relative;
-  height: 100vh;
   background-image: url(/images/aboutUsTitle.jpg);
   background-position: top;
   background-repeat: no-repeat;
@@ -29,7 +28,7 @@ html {
   font-family: "Luxurious Roman", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem);
   color: #dad0a6;
   text-shadow: #000000 1px 0 10px;
   letter-spacing: 2px;
@@ -44,18 +43,14 @@ html {
   background-repeat: repeat;
   background-size: cover;
   z-index: 0;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  height: 120vh;
+  padding: 8vh 5vw;
+  min-height: 100vh;
 }
 
 .contentReviews::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: rgba(0, 0, 0, 0.76);
   z-index: 0;
   pointer-events: none;
@@ -65,23 +60,18 @@ html {
   position: relative;
   z-index: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.486);
-  height: 90vh;
-  margin: 0vw 10vw 0vw 10vw;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4vh 2vw;
   border-radius: 25px;
   border: 3px solid #09697c;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568);
-}
-
-.profileName {
-  font-family: "Luxurious Roman", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 3rem;
-  color: #09697c;
+  min-height: 70vh;
 }
 
 .profileContent {
@@ -92,56 +82,71 @@ html {
 }
 
 .profile {
-  height: 250px;
-  width: 250px;
+  width: clamp(150px, 25vw, 250px);
+  height: clamp(150px, 25vw, 250px);
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
   display: block;
 }
 
+.profileName {
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  color: #09697c;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .reviewText {
   color: white;
-  max-width: 60vw;
+  max-width: 800px;
+  width: 100%;
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
   text-align: justify;
   letter-spacing: 1px;
   word-spacing: 2px;
   line-height: 1.6;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
+  padding: 0 1rem;
   min-height: 100px;
   max-height: 200px;
   overflow-y: auto;
+  text-align: center;
+}
+
+.buttons {
+  padding-bottom: 2vh;
 }
 
 .randomBtn {
   font-family: "Josefin Sans", sans-serif;
-  padding: 15px 30px;
+  padding: 0.8rem 1.8rem;
   cursor: pointer;
   border: 0;
   background-color: rgb(235, 236, 255);
   box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   transition: all 0.5s ease;
   border-radius: 50px;
 }
 
-.randomBtn:hover {
+.randomBtn:hover,
+.randomBtn:active {
   background-color: #09697c;
   letter-spacing: 3px;
   color: hsl(0, 0%, 100%);
 }
 
 .randomBtn:active {
-  background-color: #09697c;
-  letter-spacing: 3px;
-  color: hsl(0, 0%, 100%);
-  transform: translateY(10px);
+  transform: translateY(5px);
   transition: 120ms;
 }
 
@@ -149,11 +154,12 @@ html {
 .nextBtn {
   place-items: center;
   background: #e3edf7;
-  padding: 1.4em;
+  padding: 1.2em;
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid transparent;
   cursor: pointer;
   transition: all 0.5s ease;
+  margin: 0 0.5rem;
 }
 
 .prevBtn:hover,
@@ -167,4 +173,34 @@ html {
 .nextBtn:active {
   transform: translateY(5px);
   transition: 120ms;
+}
+
+@media (max-width: 768px) {
+  .reviewsBanner {
+    height: 30vh;
+  }
+
+  .reviewsBody {
+    margin: 0 2vw;
+    padding: 3vh 1.5rem;
+  }
+
+  .reviewText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .reviewsBanner {
+    height: 25vh;
+  }
+
+  .reviewsBody {
+    padding: 2vh 1rem;
+  }
+
+  .profile {
+    width: 150px;
+    height: 150px;
+  }
 }

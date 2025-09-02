@@ -1,6 +1,7 @@
-.bannerMenu {
+.bannerMenu,
+.bannerMenu2 {
   position: relative;
-  height: 100vh;
+  height: 40vh;
   background-image: url(/images/textureMenu.jpg);
   background-position: top;
   background-repeat: no-repeat;
@@ -9,40 +10,41 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 40vh;
+  text-align: center;
+  padding: 2rem;
 }
 
-.bannerMenu h1 {
+.bannerMenu h1,
+.bannerMenu2 h1 {
   font-family: "Luxurious Roman", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 4rem;
+  font-size: clamp(2rem, 4vw, 4rem);
   color: #ecb131;
   letter-spacing: 2px;
   text-shadow: #ffe6c580 3px 0 10px;
-  text-align: center;
-  margin-top: 10vh;
 }
 
-.tableMenu {
+.tableMenu,
+.tableMenu2 {
   position: relative;
   background-image: url(/images/menuTable.jpg);
   background-position: bottom;
   background-repeat: repeat;
   background-size: cover;
   z-index: 0;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding: 5vh 5vw;
 }
 
-.tableMenu::before {
+.tableMenu::before,
+.tableMenu2::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.877);
+  background: rgba(0, 0, 0, 0.87);
   z-index: 0;
 }
 
@@ -52,10 +54,12 @@
 .menuItems4 {
   position: relative;
   z-index: 1;
-  margin-left: 20vw;
-  margin-right: 10vw;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .item1,
@@ -67,12 +71,13 @@
 .item7,
 .item8 {
   display: flex;
+  flex: 1 1 45%;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin: 3vh;
-  width: 100%;
   gap: 1rem;
+  min-width: 280px;
+  padding: 20px;
 }
 
 .item1img,
@@ -83,8 +88,8 @@
 .item6img,
 .item7img,
 .item8img {
-  width: 29vh;
-  height: 29vh;
+  width: clamp(120px, 20vw, 200px);
+  height: clamp(120px, 20vw, 200px);
   flex-shrink: 0;
   border-radius: 25px;
   overflow: hidden;
@@ -113,9 +118,9 @@
 .item7 h2,
 .item8 h2 {
   margin: 0;
-  max-width: 40vw;
+  max-width: 100%;
   word-wrap: break-word;
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
   font-style: normal;
@@ -126,12 +131,12 @@
 .itemContent {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
   color: white;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 
 .item1 p,
@@ -142,54 +147,53 @@
 .item6 p,
 .item7 p,
 .item8 p {
-  padding-top: 2vh;
+  padding-top: 0.5rem;
 }
 
-/* second section */
-
-.bannerMenu2 {
-  position: relative;
-  height: 100vh;
-  background-image: url(/images/textureMenu.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 40vh;
+@media (max-width: 1024px) {
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8 {
+    flex: 1 1 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
 }
 
-.bannerMenu2 h1 {
-  font-family: "Luxurious Roman", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 4rem;
-  color: #ecb131;
-  text-shadow: #ffe6c580 3px 0 10px;
-  letter-spacing: 2px;
-  text-align: center;
-}
+@media (max-width: 768px) {
+  .bannerMenu h1,
+  .bannerMenu2 h1 {
+    font-size: clamp(3rem, 5vw, 3rem);
+  }
 
-.tableMenu2 {
-  position: relative;
-  background-image: url(/images/menuTable.jpg);
-  background-position: bottom;
-  background-repeat: repeat;
-  background-size: cover;
-  z-index: 0;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-}
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
 
-.tableMenu2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.89);
-  z-index: 0;
+  .item1img,
+  .item2img,
+  .item3img,
+  .item4img,
+  .item5img,
+  .item6img,
+  .item7img,
+  .item8img {
+    width: clamp(150px, 40vw, 200px);
+    height: clamp(150px, 40vw, 200px);
+  }
 }
