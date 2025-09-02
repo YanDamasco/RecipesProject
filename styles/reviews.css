@@ -1,162 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html {
-    overflow-x: hidden;
+body,
+html {
+  overflow-x: hidden;
 }
 
 .reviewsBanner {
-    position: relative;
-    height: 100vh;
-    background-image: url(/images/aboutUsTitle.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 40vh;
+  position: relative;
+  height: 100vh;
+  background-image: url(/images/aboutUsTitle.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
 }
 
 .reviewsTitle h1 {
-    font-family: "Luxurious Roman", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    color: 	#dad0a6;
-    text-shadow: #000000 1px 0 10px;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 10vh;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  color: #dad0a6;
+  text-shadow: #000000 1px 0 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 10vh;
 }
 
 .contentReviews {
-    position: relative;
-    background-image: url(/images/blackMarble3.jpg);
-    background-position: bottom;
-    background-repeat: repeat;
-    background-size: cover;
-    z-index: 0;
-    padding-top: 10vh; padding-bottom: 10vh;
-    height: 120vh;
+  position: relative;
+  background-image: url(/images/blackMarble3.jpg);
+  background-position: bottom;
+  background-repeat: repeat;
+  background-size: cover;
+  z-index: 0;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  height: 120vh;
 }
 
 .contentReviews::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.76);
-    z-index: 0;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.76);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .reviewsBody {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.486);
-    height: 90vh;
-    margin: 0vw 10vw 0vw 10vw;
-    border-radius: 25px;
-    border: 3px solid #09697c;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.486);
+  height: 90vh;
+  margin: 0vw 10vw 0vw 10vw;
+  border-radius: 25px;
+  border: 3px solid #09697c;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568);
 }
 
 .profileName {
-    font-family: "Luxurious Roman", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-    color: #09697c;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  color: #09697c;
 }
 
 .profileContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .reviewText {
-    color: white;
-    max-width: 60vw;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.4rem;
-    text-align: justify;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    line-height: 1.6;
-    margin-bottom: 10vh;
-    min-height: 100px;
-    max-height: 200px;
-    overflow-y: auto;
+  color: white;
+  max-width: 60vw;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 1.6;
+  margin-bottom: 10vh;
+  min-height: 100px;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 .randomBtn {
-    font-family: "Josefin Sans", sans-serif;
-    padding: 15px 30px;
-    cursor: pointer;
-    border: 0;
-    background-color: rgb(235, 236, 255);
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: 15px;
-    transition: all 0.5s ease;
-    border-radius: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: 0;
+  background-color: rgb(235, 236, 255);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  border-radius: 50px;
 }
 
 .randomBtn:hover {
-    background-color: #09697c;
-    letter-spacing: 3px;
-    color: hsl(0, 0%, 100%);
+  background-color: #09697c;
+  letter-spacing: 3px;
+  color: hsl(0, 0%, 100%);
 }
 
 .randomBtn:active {
-    background-color: #09697c;
-    letter-spacing: 3px;
-    color: hsl(0, 0%, 100%);
-    transform: translateY(10px);
-    transition: 120ms;
+  background-color: #09697c;
+  letter-spacing: 3px;
+  color: hsl(0, 0%, 100%);
+  transform: translateY(10px);
+  transition: 120ms;
 }
 
-.prevBtn, .nextBtn {
-    place-items: center;
-    background: #e3edf7;
-    padding: 1.4em;
-    border-radius: 10px;
-    border: 1px solid rgba(0,0,0,0);
-    cursor: pointer;
-    transition: all 0.5s ease;
+.prevBtn,
+.nextBtn {
+  place-items: center;
+  background: #e3edf7;
+  padding: 1.4em;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
-.prevBtn:hover, .nextBtn:hover  {
-    border: 1px solid rgba(0,0,0,0.1);
-    transform: translateY(0.3em);
-    background-color: #09697c;
+.prevBtn:hover,
+.nextBtn:hover {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: translateY(0.3em);
+  background-color: #09697c;
 }
 
-.prevBtn:active, .nextBtn:active {
-    transform: translateY(5px);
-    transition: 120ms;
+.prevBtn:active,
+.nextBtn:active {
+  transform: translateY(5px);
+  transition: 120ms;
 }
