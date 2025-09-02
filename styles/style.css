@@ -528,6 +528,47 @@ footer {
   opacity: 1;
 }
 
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #000;
+  margin: 8px;
+  transition: 0.3s ease;
+  transform-origin: center;
+}
+
+.navBtns.active {
+  transform: translateX(0);
+}
+
+.mobile-menu.active .line1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: translateY(-12.5px) rotate(-45deg);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 1024px) {
   body {
     padding-top: 10vh;
@@ -546,6 +587,33 @@ footer {
   }
   .pinsTitle {
     font-size: 2.5rem;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navBtns {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 50vw;
+    height: 90vh;
+    background: #f3f8f8e0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .navBtns li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
   }
 }
 
